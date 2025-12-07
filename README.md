@@ -1,16 +1,78 @@
-# React + Vite
+# Projet Fil Rouge — Quiz React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Objectif du projet
+Ce projet consiste à développer une application React sous forme de quiz interactif.  
+Les questions portent sur la création du projet lui-même (React, Vite, Git, organisation des fichiers, hooks, etc.).  
+L’objectif est de mettre en pratique les notions vues en cours tout en réalisant une application complète et fonctionnelle.
 
-Currently, two official plugins are available:
+## Technologies utilisées
+- React
+- Vite
+- JavaScript (ES Modules)
+- Git et GitHub
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## React Compiler
+1. Cloner le dépôt :
+git clone <url_du_depot>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Installer les dépendances :
+npm install
 
-## Expanding the ESLint configuration
+3. Lancer le serveur de développement :
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+L’application sera accessible à l’adresse affichée par Vite (ex : http://localhost:5173).
+
+## Structure du projet
+
+src/
+  components/
+    Header.jsx
+    Footer.jsx
+    Home.jsx
+    Quiz.jsx
+    Question.jsx
+    AnswerButton.jsx
+  App.jsx
+public/
+  questions.json
+README.md
+
+## Fonctionnement
+
+### Page d’accueil
+Afficher un message d’introduction et un bouton permettant de démarrer le quiz.
+
+### Quiz
+Les questions sont chargées via fetch depuis le fichier public/questions.json.  
+L’utilisateur répond en sélectionnant une réponse par question.  
+L’application passe automatiquement à la question suivante.  
+
+### Score final
+Une fois la dernière question terminée, un score récapitulatif s’affiche sous la forme :
+Score : X / nombre total de questions.
+
+## Questions du quiz
+Les questions portent sur :
+- la création d’un projet React avec Vite  
+- l’utilisation des commandes Git  
+- la structure d’un projet React  
+- l’usage de useState et useEffect  
+- les fichiers importants du projet  
+
+## Points techniques
+- Les composants sont rangés dans src/components pour une meilleure organisation.
+- Le fichier JSON simule une petite API locale.
+- useState gère l’état du quiz (index, score, fin).
+- useEffect charge les questions au montage du composant.
+
+## Améliorations possibles
+- Ajout d’un score maximum enregistré
+- Barre de progression
+- Effets visuels entre les questions
+- Timer par question
+- Ajout de styles personnalisés
+
+## Auteur
+Projet réalisé dans le cadre du fil rouge React.
