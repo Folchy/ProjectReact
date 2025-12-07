@@ -1,0 +1,52 @@
+[
+  {
+    "text": "Quel outil est utilisé pour initialiser rapidement un projet React moderne ?",
+    "answers": ["Create React App", "Vite", "Webpack"],
+    "correct": 1
+  },
+  {
+    "text": "Quelle commande crée un projet React avec Vite ?",
+    "answers": ["npm create vite@latest", "npm init react-app", "npm start vite"],
+    "correct": 0
+  },
+  {
+    "text": "Dans un projet React, où place-t-on généralement les composants ?",
+    "answers": ["public/", "src/components/", "node_modules/"],
+    "correct": 1
+  },
+  {
+    "text": "Que fait la commande git init ?",
+    "answers": ["Supprime un dépôt", "Crée un dépôt Git local", "Clone un dépôt distant"],
+    "correct": 1
+  },
+  {
+    "text": "Quel fichier sert d’entrée principale pour l’application React ?",
+    "answers": ["App.jsx", "index.html", "package.json"],
+    "correct": 0
+  },
+  {
+    "text": "Quelle commande lance le serveur de développement Vite ?",
+    "answers": ["npm run dev", "npm run start", "npm serve"],
+    "correct": 0
+  },
+  {
+    "text": "Quel hook React permet de gérer l’état d’un composant ?",
+    "answers": ["useState", "useEffect", "useRef"],
+    "correct": 0
+  },
+  {
+    "text": "Que permet useEffect() dans React ?",
+    "answers": ["Créer des composants", "Gérer les effets comme un fetch", "Compiler le projet"],
+    "correct": 1
+  },
+  {
+    "text": "Quel fichier contient les métadonnées du projet ?",
+    "answers": ["vite.config.js", "package.json", "index.jsx"],
+    "correct": 1
+  },
+  {
+    "text": "Quel élément appartient au dossier public ?",
+    "answers": ["Composants React", "Fichiers statiques", "Hooks"],
+    "correct": 1
+  }
+]
